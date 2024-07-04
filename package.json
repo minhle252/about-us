@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ckeditor/ckeditor5-react": "^8.0.0",
+    "@gsap/react": "^2.1.1",
     "@headlessui/react": "^2.1.1",
     "@heroicons/react": "^2.1.4",
     "@types/axios": "^0.14.0",
@@ -19,6 +20,7 @@
     "ckeditor5": "^42.0.0",
     "ckeditor5-premium-features": "^42.0.0",
     "formidable": "^3.5.1",
+    "gsap": "^3.12.5",
     "html-react-parser": "^5.1.10",
     "next": "14.2.4",
     "react": "^18",

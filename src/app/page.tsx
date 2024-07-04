@@ -15,6 +15,7 @@ import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
 import Footer from "@/components/layout/footer";
+import Pillars from "@/components/hompages/pillars";
 
 export default function Home() {
   const [listCompoent, setListCompoent] = useState<any>([]);
@@ -37,7 +38,7 @@ export default function Home() {
         if (item.background) {
           textColor = "#fff";
         }
-        if (item.type == "1") {
+        if (item.type == "11") {
           return (
             <div
               key={index}
@@ -50,40 +51,10 @@ export default function Home() {
           );
         } else if (item.type == "2") {
           return (
-            <div key={index} className="px-[20%] py-24 text-center">
-              {item.title && <h5 className="text-xl font-semibold mb-5">{item.title}</h5>}
-              <div>{parse(item.description)}</div>
-              <div className="flex">
-                {item?.children &&
-                  item?.children.map((itemChild: any, indexChild: number) => {
-                    return (
-                      <div key={index + indexChild} className="w-3/12 px-3 mt-3">
-                        <div className="bg-gray-200 p-3 w-full h-full rounded-xl">
-                          {itemChild.images && (
-                            <Image
-                              src={itemChild.images}
-                              width={100}
-                              height={100}
-                              className="w-full"
-                              alt="Picture of the author"
-                            />
-                          )}
-                          <p className="font-semibold">{itemChild.title}</p>
-                        </div>
-                      </div>
-                    );
-                  })}
-              </div>
-              {item.link && (
-                <div className="d-flex justify-center py-10">
-                  <Link href={item.link} className="bg-black py-4 px-10 mt-5 text-white">
-                    Learn More
-                  </Link>
-                </div>
-              )}
-            </div>
+            <Pillars key={index} item={item}/>
+            
           );
-        } else if (item.type == "3") {
+        } else if (item.type == "31") {
           return (
             <div
               className={`flex bg-gray-200 p-5 px-[20%] ${item.image_position == "left" ? "flex-row-reverse" : ""}`}
@@ -98,7 +69,7 @@ export default function Home() {
               </div>
             </div>
           );
-        } else if (item.type == "4") {
+        } else if (item.type == "41") {
           return (
             <div key={index} className="px-[20%] py-24 bg-gray-200 text-center">
               {item.title && <h5 className="text-xl font-semibold mb-5">{item.title}</h5>}
@@ -139,7 +110,7 @@ export default function Home() {
               )}
             </div>
           );
-        } else if (item.type == "5") {
+        } else if (item.type == "51") {
           return (
             <div key={index} className="px-[20%] py-24  text-center">
               {item.title && <h5 className="text-3xl font-semibold mb-20">{item.title}</h5>}
@@ -174,7 +145,7 @@ export default function Home() {
           );
         }
       })}
-      <Footer/>
+      {/* <Footer/> */}
     </main>
   );
 }

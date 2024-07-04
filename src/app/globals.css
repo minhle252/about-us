@@ -109,6 +109,7 @@ body{
     border: 1px solid #000;
     width: 15px;
     position: absolute;
-
-
+  }
+  .line{
+    opacity: 0;
   }
