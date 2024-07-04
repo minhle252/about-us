@@ -1,0 +1,39 @@
+{
+  "name": "about-us",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-react": "^8.0.0",
+    "@headlessui/react": "^2.1.1",
+    "@heroicons/react": "^2.1.4",
+    "@types/axios": "^0.14.0",
+    "@types/uuid": "^10.0.0",
+    "ag-grid-react": "^32.0.0",
+    "axios": "^1.7.2",
+    "ckeditor5": "^42.0.0",
+    "ckeditor5-premium-features": "^42.0.0",
+    "formidable": "^3.5.1",
+    "html-react-parser": "^5.1.10",
+    "next": "14.2.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-toastify": "^10.0.5",
+    "swiper": "^11.1.4",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/formidable": "^3.4.5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

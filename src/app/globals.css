@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-size: 16px;
+}
+.test-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.test-header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    margin-bottom: 0.5rem;
+}
+
+.test-header .example-section {
+    margin-bottom: 0.5rem;
+}
+
+#myGrid {
+    flex: 1 1 0px;
+}
+.ck.ck-editor__main > .ck-editor__editable{
+    min-height: 200px;
+}
+.box-form-iframe{
+    position: relative;
+}
+.box-form-iframe::before{
+    --title-iframe: 'Item';
+    font-size: 12px;
+    content: var(--title-iframe);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(15px, -50%);
+    background-color: #fff;
+    padding: 0 8px;
+    --tw-text-opacity: 1;
+    color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+.logo-animation{
+    width: 40px;
+    height: 40px;
+    transition: all .5s ease-in-out;
+}
+.logo-animation.active{
+    width: 100px !important;
+    height: 100px !important;
+    transition: all .5s ease-in-out;
+
+}
+/* swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper-button-prev,.swiper-button-next{
+    width: 50px !important;
+    height: 50px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 1px solid #000
+  }
+  .swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 15px !important;
+    color: #000;
+    font-weight: bold;
+  }
+  .swiper-button-prev{
+    left: 0 !important;
+  }
+  .swiper-button-next{
+    right: 0 !important;
+  }
+  .swiper-button-prev:after{
+    transform: translateX(-50%);
+  }
+  .swiper-button-next:after{
+    transform: translateX(50%);
+  }
+  .swiper-button-prev::before, .swiper-button-next::before{
+    content: " ";
+    border: 1px solid #000;
+    width: 15px;
+    position: absolute;
+
+
+  }
