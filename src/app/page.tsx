@@ -86,7 +86,7 @@ export default function Home() {
         } else if (item.type == "3") {
           return (
             <div
-              className={`flex bg-gray-200 p-5 px-[20%] ${item.image_position == "right" ? "flex-row-reverse" : ""}`}
+              className={`flex bg-gray-200 p-5 px-[20%] ${item.image_position == "left" ? "flex-row-reverse" : ""}`}
             >
               <div key={index} className="flex-1 py-24 px-5 text-start items-center">
                 <p className="mb-3">{item.subtitle}</p>
