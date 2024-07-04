@@ -14,6 +14,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 // import required modules
 import { Navigation } from "swiper/modules";
+import Footer from "@/components/layout/footer";
 
 export default function Home() {
   const [listCompoent, setListCompoent] = useState<any>([]);
@@ -40,7 +41,7 @@ export default function Home() {
           return (
             <div
               key={index}
-              className="px-[20%] py-20 text-center"
+              className="px-[20%] py-24 text-center"
               style={{ background: item.background, color: textColor }}
             >
               {item.title && <h5 className="text-3xl font-semibold mb-5">{item.title}</h5>}
@@ -49,7 +50,7 @@ export default function Home() {
           );
         } else if (item.type == "2") {
           return (
-            <div key={index} className="px-[20%] py-20 text-center">
+            <div key={index} className="px-[20%] py-24 text-center">
               {item.title && <h5 className="text-xl font-semibold mb-5">{item.title}</h5>}
               <div>{parse(item.description)}</div>
               <div className="flex">
@@ -87,7 +88,7 @@ export default function Home() {
             <div
               className={`flex bg-gray-200 p-5 px-[20%] ${item.image_position == "right" ? "flex-row-reverse" : ""}`}
             >
-              <div key={index} className="flex-1 py-20 px-5 text-start items-center">
+              <div key={index} className="flex-1 py-24 px-5 text-start items-center">
                 <p className="mb-3">{item.subtitle}</p>
                 {item.title && <h5 className="text-3xl font-semibold mb-5">{item.title}</h5>}
                 <div>{parse(item.description)}</div>
@@ -99,7 +100,7 @@ export default function Home() {
           );
         } else if (item.type == "4") {
           return (
-            <div key={index} className="px-[20%] py-20 bg-gray-200 text-center">
+            <div key={index} className="px-[20%] py-24 bg-gray-200 text-center">
               {item.title && <h5 className="text-xl font-semibold mb-5">{item.title}</h5>}
               <div>{parse(item.description)}</div>
               <div className="flex flex-col">
@@ -140,7 +141,7 @@ export default function Home() {
           );
         } else if (item.type == "5") {
           return (
-            <div key={index} className="px-[20%] py-20  text-center">
+            <div key={index} className="px-[20%] py-24  text-center">
               {item.title && <h5 className="text-3xl font-semibold mb-20">{item.title}</h5>}
               <div>{parse(item.description)}</div>
               <div>
@@ -173,6 +174,7 @@ export default function Home() {
           );
         }
       })}
+      <Footer/>
     </main>
   );
 }

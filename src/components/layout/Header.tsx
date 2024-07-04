@@ -13,9 +13,8 @@ const Header: React.FC = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   
-  console.log(offset);
 	return (
-		<div className="flex justify-between items-center bg-white px-10 fixed w-full top-0 left-0">
+		<div className="flex justify-between items-center bg-white px-10 fixed w-full top-0 left-0 z-50">
 			<ul className="flex w-1/2">
                 <li>
                     <Link href="/" className="text-black me-4">Home</Link>
@@ -41,7 +40,7 @@ const Header: React.FC = () => {
             </ul>
             <div className="w-1/2 py-3">
                 <Image
-                    className={`logo-animation ${offset > 150 && 'active'}`}
+                    className={`logo-animation ${offset < 150 && 'active'}`}
                     width={100}
                     height={100}
                     src="https://assets.it-consultis.com/_next/static/media/logo.b0b21a99.svg"
